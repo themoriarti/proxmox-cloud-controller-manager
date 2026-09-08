@@ -1,4 +1,63 @@
 <a name="v0.11.0"></a>
+## [0.16.0](https://github.com/themoriarti/proxmox-cloud-controller-manager/compare/v0.15.0...v0.16.0) (2026-09-08)
+
+
+### Features
+
+* add config options token_id_file & token_secret_file ([8ef4bce](https://github.com/themoriarti/proxmox-cloud-controller-manager/commit/8ef4bcea6964829a416dcc3fe32cc65a99c71b08))
+* add context7 ([5a4d2df](https://github.com/themoriarti/proxmox-cloud-controller-manager/commit/5a4d2dfa8a0e2185ff1b77ee6ea004df9569f367))
+* add controllers ([8212493](https://github.com/themoriarti/proxmox-cloud-controller-manager/commit/8212493d9a3e50748c5c1479333a6ae8196c6dc8))
+* add deps commit type ([6009631](https://github.com/themoriarti/proxmox-cloud-controller-manager/commit/600963192f3c8619d3858a27647802d3f476ea7d))
+* add extra labels ([229be14](https://github.com/themoriarti/proxmox-cloud-controller-manager/commit/229be1432a8922c310678c89d12c1d1a087c90aa))
+* add named errors to cloud config ([144b1c7](https://github.com/themoriarti/proxmox-cloud-controller-manager/commit/144b1c74e6294decfcfa460fb635ccbc4349913d))
+* add new network addressing features ([e1b8e9b](https://github.com/themoriarti/proxmox-cloud-controller-manager/commit/e1b8e9b419c36202cd5ebf939f3c5d2fc125a5d0))
+* add release-please ([a33ea6e](https://github.com/themoriarti/proxmox-cloud-controller-manager/commit/a33ea6ead7ea03fc0e2addd2ff74afb5a87936bb))
+* can use user/password ([ac2f564](https://github.com/themoriarti/proxmox-cloud-controller-manager/commit/ac2f564e4366d32a28f502dfc6bf7836b5f2d98b))
+* **chart:** add daemonset mode ([ce92b3e](https://github.com/themoriarti/proxmox-cloud-controller-manager/commit/ce92b3eef0fd2b4c3a84b096d7897701f94e0d1a))
+* **chart:** add extraVolumes + extraVolumeMounts ([d54368e](https://github.com/themoriarti/proxmox-cloud-controller-manager/commit/d54368e14f019f3abb742d60d01b0ae6b9e34524))
+* **chart:** add hostAliases and initContainers ([9ba9ff2](https://github.com/themoriarti/proxmox-cloud-controller-manager/commit/9ba9ff27dd773f801ad23024695f062e8f0975fe))
+* **chart:** allow customizing DNS policy ([c7815d3](https://github.com/themoriarti/proxmox-cloud-controller-manager/commit/c7815d34beb317712f70c607dab88edc8b3e1fb7))
+* **chart:** extra envs values ([646d776](https://github.com/themoriarti/proxmox-cloud-controller-manager/commit/646d77633fc032fc2e5772ccf47e88b79870b4d9))
+* cosign images ([bc879ab](https://github.com/themoriarti/proxmox-cloud-controller-manager/commit/bc879ab871508a66656befef3238b54acda822b5))
+* custom instance type ([0f0374c](https://github.com/themoriarti/proxmox-cloud-controller-manager/commit/0f0374c2eb1c0e09afa4c6c249c867ad6b099a37))
+* enable support for capmox ([956a30a](https://github.com/themoriarti/proxmox-cloud-controller-manager/commit/956a30a46389a25d05c87ac9754fbeb92e774776))
+* enhance ha-group handling ([706faa8](https://github.com/themoriarti/proxmox-cloud-controller-manager/commit/706faa8d088bb0467770d364b374f060398e9b25))
+* find node by uuid ([5876cd4](https://github.com/themoriarti/proxmox-cloud-controller-manager/commit/5876cd4c7be105f50a1a279aacf5464a78c490d2))
+* force label update ([704aacc](https://github.com/themoriarti/proxmox-cloud-controller-manager/commit/704aacce5a776257201bb1037e909339062b2151))
+* helm oci release ([f8d1712](https://github.com/themoriarti/proxmox-cloud-controller-manager/commit/f8d17121dc637f10f13ecfcddb8958a2335fa61e))
+* kubelet dualstack support ([a752d10](https://github.com/themoriarti/proxmox-cloud-controller-manager/commit/a752d1056d67fb261dd436f378f42a14ede56ca1))
+* prometheus metrics ([b81ad14](https://github.com/themoriarti/proxmox-cloud-controller-manager/commit/b81ad1406d2f8b152f031692f67bdd6e01fd7008))
+* use proxmox ha-group as zone name ([27c3e62](https://github.com/themoriarti/proxmox-cloud-controller-manager/commit/27c3e627c4c02eca2766f6af5d3d06e297713845))
+
+
+### Bug Fixes
+
+* case-insensitivity uuid ([d3c0f38](https://github.com/themoriarti/proxmox-cloud-controller-manager/commit/d3c0f3890ba5cec0f6ec255fba6a2973a0689a7b))
+* **chart:** provider value typo ([dac1775](https://github.com/themoriarti/proxmox-cloud-controller-manager/commit/dac1775cf2abcf2e8fb2b597a9672bd1c63d26a7))
+* **chart:** role binding ([ba7a611](https://github.com/themoriarti/proxmox-cloud-controller-manager/commit/ba7a61181add80a838e3d010feab06a304ef98f9))
+* cluster vm list ([efb753c](https://github.com/themoriarti/proxmox-cloud-controller-manager/commit/efb753c9deea476da509fd2e4a1af9b238f70b5d))
+* context7 ([b3f5865](https://github.com/themoriarti/proxmox-cloud-controller-manager/commit/b3f5865ab2a4b12aac6f34fc81f7dca796ddda7b))
+* deployment templating and values comments ([5e17bea](https://github.com/themoriarti/proxmox-cloud-controller-manager/commit/5e17beaf664aea42e7df9521581385e669b30524))
+* find node by name ([3a34fb9](https://github.com/themoriarti/proxmox-cloud-controller-manager/commit/3a34fb960a39c79b09c54e0919239137af6094a0))
+* ha-groups ([66d2e70](https://github.com/themoriarti/proxmox-cloud-controller-manager/commit/66d2e7023010f517e422a3b56519fb9600afe9dd))
+* handle inaccessible nodes ([0a31716](https://github.com/themoriarti/proxmox-cloud-controller-manager/commit/0a31716c17dd601fbe36025186de86e2d47e82cd))
+* helm chart release ([3983d5b](https://github.com/themoriarti/proxmox-cloud-controller-manager/commit/3983d5ba102afcaa6ec0ad91fdc350c0b2b0e4d3))
+* init provider ([de55986](https://github.com/themoriarti/proxmox-cloud-controller-manager/commit/de5598648f5a3cad5942f6ede9990795b29399f6))
+* instance type ([10f3e36](https://github.com/themoriarti/proxmox-cloud-controller-manager/commit/10f3e365d2f471d1e3a0bd8928ee1c7643d57678))
+* log error when instance metadata retrieval fails ([d2181a8](https://github.com/themoriarti/proxmox-cloud-controller-manager/commit/d2181a88f6b905544b6a2c9bd4e70e0bbf1da690))
+* makefile conformance stage ([2ebbf7a](https://github.com/themoriarti/proxmox-cloud-controller-manager/commit/2ebbf7a9d5353e0565c024ba48070b14b2ae1e31))
+* namespace for extension-apiserver-authentication rolebinding ([5c1a382](https://github.com/themoriarti/proxmox-cloud-controller-manager/commit/5c1a38234ce46bcc1ae3453fe59fc6e252c783bf))
+* reduce api calls ([8923f5d](https://github.com/themoriarti/proxmox-cloud-controller-manager/commit/8923f5d852c8e376ac7081953158f597a7e6b930))
+* release please ([63418b0](https://github.com/themoriarti/proxmox-cloud-controller-manager/commit/63418b011763fed9620196430bbb9791308bdc30))
+* release please ([fced446](https://github.com/themoriarti/proxmox-cloud-controller-manager/commit/fced446f46cec5c0d8091ec918d4f4a2c1e6ad0e))
+* service account name ([88fad84](https://github.com/themoriarti/proxmox-cloud-controller-manager/commit/88fad844c72271c40dccd67b46dead69fb4f603c))
+* typo in faq ([ded3eb7](https://github.com/themoriarti/proxmox-cloud-controller-manager/commit/ded3eb7375562dc1f483bb68a12e36aa1b93853b))
+
+
+### Dependencies
+
+* prepare release ([89cd9bb](https://github.com/themoriarti/proxmox-cloud-controller-manager/commit/89cd9bbe6ce0ea83d5833de6e5532b49690d9277))
+
 ## [0.15.0](https://github.com/sergelogvinov/proxmox-cloud-controller-manager/compare/v0.14.0...v0.15.0) (2026-08-06)
 
 
